@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/WelcomeSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Loading ..."
+        android:textSize="15pt"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/fotologo"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/wildan"
+        app:layout_constraintStart_toStartOf="@id/WelcomeSign"
+        app:layout_constraintTop_toBottomOf="@id/WelcomeSign" />
+
+    <ProgressBar
+        android:id="@+id/loadingbar"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintStart_toStartOf="@+id/fotologo"
+        app:layout_constraintTop_toBottomOf="@+id/fotologo"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
